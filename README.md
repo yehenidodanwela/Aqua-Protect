@@ -1,4 +1,5 @@
 🌊 AquaProtect – A Website for Marine Conservation! 🌊
+
 AquaProtect is an educational and interactive website developed by our team as part of a university coursework project, inspired by United Nations Sustainable Development Goal 14 – Life Below Water. Built using HTML, CSS, and JavaScript, AquaProtect aims to raise awareness about marine conservation and inspire meaningful action.
 
 🔹 Why AquaProtect?
