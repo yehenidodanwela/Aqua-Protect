@@ -1,0 +1,140 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Set font to Poppins */
+    background: #f4f4f4; /* Light grey background */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+main {
+    margin-bottom: 50px; /* Add margin to the bottom of the main content */
+}
+
+/* Team Section */
+.team {
+    text-align: center; /* Center-align the content */
+    padding: 50px 10%; /* Add padding around the section */
+}
+
+.team h1 {
+    font-size: 42px; /* Set font size for the header */
+    margin-bottom: 10px; /* Space below the header */
+    font-family: Arial, Helvetica, sans-serif; /* Set font family */
+    text-align: center; /* Center-align the text */
+    background: linear-gradient(90deg, #daeeff, #3e8ed9, #0f088e); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
+}
+
+.team p {
+    color: #333; /* Dark text color */
+    font-size: 16px; /* Set font size */
+    margin-bottom: 40px; /* Space below the paragraph */
+}
+
+/* Team Grid */
+.team-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 30px; /* Add gap between items */
+}
+
+/* Individual Team Member Box */
+.team-member {
+    background: white; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    overflow: hidden; /* Hide overflowed content */
+    width: 250px; /* Set width */
+    transition: 0.4s ease-in-out; /* Smooth transition effect */
+    height: 425px; /* Set height */
+    margin-bottom: 30px; /* Space between boxes */
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    height: 525px; /* Increase height on hover */
+}
+
+/* Image Box Styles */
+.imgBox {
+    width: 100%; /* Full width */
+    height: 250px; /* Set height for the image container */
+    overflow: hidden; /* Hide overflowed image parts */
+    transition: transform 0.5s ease; /* Smooth transform effect */
+}
+
+.imgBox img {
+    width: 100%; /* Make the image take full width */
+    height: 100%; /* Make the image take full height */
+    object-fit: cover; /* Ensure the image covers the box without distortion */
+    transition: transform 0.5s ease; /* Smooth transform effect */
+}
+
+.team-member:hover .imgBox img {
+    transform: scale(1.2); /* Zoom image on hover */
+}
+
+/* Team Member Details */
+.details {
+    padding: 20px; /* Add padding around the details */
+    text-align: center; /* Center-align the text */
+}
+
+.details h3 {
+    font-size: 18px; /* Set font size for the name */
+    margin-bottom: 5px; /* Space below the name */
+}
+
+.details span {
+    color: #4174b3; /* Blue color for the role or designation */
+    font-weight: 600; /* Bold weight */
+    font-size: 14px; /* Smaller font size */
+}
+
+/* Editor Link Style */
+.editor-link {
+    display: inline-block; /* Inline block display */
+    margin-top: 10px; /* Add margin at the top */
+    color: #4174b3; /* Blue color */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    border-bottom: 2px solid #4174b3; /* Blue border bottom */
+    transition: 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.editor-link:hover {
+    color: #213456; /* Darker blue color on hover */
+    border-color: #213456; /* Darker border color on hover */
+}
+
+/* Extra Details Section */
+.extra-details {
+    display: none; /* Hide extra details by default */
+    margin-top: 10px; /* Add margin at the top */
+    font-size: 14px; /* Smaller font size */
+    color: #666; /* Gray color for the text */
+}
+
+.team-member:hover .extra-details {
+    display: block; /* Show extra details on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .team {
+        padding: 50px 5%; /* Adjust padding for smaller screens */
+    }
+
+    .team-grid {
+        flex-direction: column; /* Stack team members vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .team-member {
+        width: 80%; /* Make team member boxes 80% width on small screens */
+    }
+}
+

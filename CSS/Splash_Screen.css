@@ -1,0 +1,78 @@
+/* Style for the h1 element */
+h1 {
+    text-align: center; /* Center the text */
+    color: black; /* Set text color to black */
+    font-size: 60px; /* Set font size */
+    margin: 20px; /* Add margin around the h1 */
+    font-family: Georgia, serif; /* Set font family */
+}
+
+/* Body styles */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background: url('../Images/SplashScreen/Background.jpg') no-repeat center center / cover; /* Set background image with cover */
+}
+
+/* Container for the splash screen content */
+.splash-container {
+    text-align: center; /* Center text inside the container */
+    color: white; /* Set text color to white */
+    padding: 20px; /* Add padding around the container */
+    border-radius: 10px; /* Rounded corners */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+/* Style for the page editor button */
+.page-editor {
+    display: inline-block; /* Inline block display */
+    padding: 12px 25px; /* Add padding inside the button */
+    font-size: 18px; /* Set font size */
+    text-decoration: none; /* Remove underline from text */
+    background: rgb(254, 254, 254); /* Set background color */
+    color: rgb(0, 0, 0); /* Set text color to black */
+    border: 2px solid #11228f; /* Add border */
+    border-radius: 25px; /* Rounded corners */
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out; /* Add transition for hover effects */
+}
+
+/* Button hover effect */
+.page-editor:hover {
+    background: #11228f; /* Change background color on hover */
+    color: white; /* Change text color to white on hover */
+    border: 2px solid white; /* Change border color to white */
+}
+
+/* Button active effect (when clicked) */
+.page-editor:active {
+    transform: scale(0.95); /* Slight press effect when clicked */
+}
+
+/* Container for the loader */
+.loader-container {
+    margin: 20px auto; /* Center the loader with margin */
+}
+
+/* Loader animation */
+.loader {
+    margin: 20px auto; /* Center the loader */
+    border: 5px solid #f3f3f3; /* Set light gray border */
+    border-top: 5px solid #3498db; /* Set blue border-top for loader */
+    border-radius: 50%; /* Make the loader circular */
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    animation: spin 4s linear infinite; /* Apply spinning animation */
+}
+
+/* Keyframes for the spinning loader animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); } /* Start at 0 degrees */
+    100% { transform: rotate(360deg); } /* End at 360 degrees */
+}

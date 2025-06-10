@@ -1,0 +1,168 @@
+table {
+    width: 85%;  /* Sets the table width to 85% of its container */
+    border-collapse: collapse; /* Collapses table borders into a single border */
+    margin: 30px 0; /* Adds vertical margin above and below the table */
+    font-family: 'Times New Roman', Times, serif; /* Sets the font family for the table text */
+}
+
+.table-container {
+    display: flex; /* Uses flexbox to arrange the content inside the container */
+    justify-content: center; /* Centers the content horizontally */
+}
+
+.ourwebsitelogo {
+    width: 180px; /* Sets the width of the website logo */
+    height: auto; /* Automatically adjusts the height to maintain aspect ratio */
+}
+
+th {
+    color: white; /* Sets the text color of table headers to white */
+    padding: 10px; /* Adds padding inside table headers */
+    text-align:center; /* Centers the text inside the table headers */
+    font-size: 16px; /* Sets the font size of table headers */
+    text-transform: uppercase; /* Makes the text uppercase */
+}
+
+.icon {
+    width: 30px; /* Sets the width of the icon */
+    height: 30px; /* Sets the height of the icon */
+    margin-bottom: 3px; /* Adds margin below the icon */
+    border-radius: 5px; /* Rounds the corners of the icon */
+}
+
+.icon-container {
+    position: relative; /* Positions the icon container relative to its normal position */
+    display: inline-block; /* Displays the icon container as an inline-block */
+}
+
+.icon-container .tooltip {
+    visibility: hidden; /* Initially hides the tooltip */
+    background-color: rgba(255, 255, 255, 0.75); /* Sets the background color of the tooltip with transparency */
+    color: #000000; /* Sets the text color of the tooltip to black */
+    text-align: center; /* Centers the tooltip text */
+    padding: 5px; /* Adds padding inside the tooltip */
+    border-radius: 5px; /* Rounds the corners of the tooltip */
+    position: absolute; /* Positions the tooltip absolutely within the icon container */
+    bottom: 120%; /* Positions the tooltip 120% below the icon container */
+    left: 50%; /* Centers the tooltip horizontally */
+    transform: translateX(-50%); /* Adjusts the tooltip to be perfectly centered */
+    white-space: nowrap; /* Prevents the tooltip text from wrapping */
+    font-size: 12px; /* Sets the font size of the tooltip */
+    opacity: 0; /* Initially makes the tooltip transparent */
+    transition: opacity 0.3s; /* Smooth transition for the tooltip's opacity */
+}
+
+.icon-container:hover .tooltip {
+    visibility: visible; /* Makes the tooltip visible on hover */
+    opacity: 1; /* Makes the tooltip fully opaque on hover */
+}
+
+/* First row of <th> */
+table tr:nth-child(1) th {
+    background-color: #213456; /* Sets background color of the first row of headers */
+    color: white; /* Sets the text color of the header to white */
+    padding: 10px; /* Adds padding inside the header cells */
+}
+
+/* Second row of <th> */
+table tr:nth-child(2) th {
+    background-color: #4174b3; /* Sets background color of the second row of headers */
+    color: white; /* Sets the text color of the header to white */
+    padding: 10px; /* Adds padding inside the header cells */
+}
+
+/* Add alternating row colors for better readability */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Sets background color for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Sets background color for odd rows */
+}
+
+/* Add padding and borders to table cells */
+th,td {
+    padding: 8px; /* Adds padding inside table cells */
+    border: 1px solid #ddd; /* Adds a border around table cells */
+}
+
+/* Add a border around the table */
+table {
+    border: 2px solid  #10315a; /* Sets a border around the table */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the table */
+}
+
+/* Hover effect for rows */
+tr:hover {
+    background-color: #ddd; /* Changes the background color of the row on hover */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate interactivity */
+}
+
+/* Add styles for hyperlinks */
+a {
+    text-decoration: none; /* Removes underline from links */
+    color:  #10315a; /* Sets the text color of the link */
+}
+
+/* Add custom icons or symbols for verified column */
+td:last-child {
+    text-align: center; /* Centers the content in the last column of the table */
+    font-size: 18px; /* Sets the font size for the content in the last column */
+}
+
+/* Style for the website links column */
+td a {
+    display: inline-block; /* Displays the links as inline-block elements */
+    padding: 5px 10px; /* Adds padding around the link */
+    background-color: #f2f2f2; /* Sets a light background color for the link */
+    border-radius: 5px; /* Rounds the corners of the link */
+    border: 1px solid #ddd; /* Adds a border around the link */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions for background color and transform */
+}
+
+/* Hover effect for website links */
+td a:hover {
+    background-color: #4174b3; /* Changes the background color of the link on hover */
+    color: white; /* Changes the text color to white on hover */
+    transform: scale(1.05); /* Slightly enlarges the link on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 100%; /* Makes the table take up 100% of the container on small screens */
+        font-size: 14px; /* Reduces the font size for better readability */
+    }
+
+    th, td {
+        padding: 6px; /* Reduces padding inside table cells */
+    }
+
+    .table-container {
+        padding: 0 10px; /* Adds horizontal padding to table container */
+    }
+
+    .icon {
+        width: 20px; /* Reduces icon size */
+        height: 20px; /* Reduces icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 12px; /* Further reduces font size for very small screens */
+    }
+
+    th, td {
+        padding: 4px; /* Reduces padding further */
+    }
+
+    .icon {
+        width: 18px; /* Reduces icon size even more */
+        height: 18px; /* Reduces icon size even more */
+    }
+
+    td a {
+        font-size: 12px; /* Reduces the font size for links */
+    }
+}

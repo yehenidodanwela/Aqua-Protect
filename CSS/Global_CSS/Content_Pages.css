@@ -1,0 +1,255 @@
+h1{
+    font-size: 50px;  /* Sets the font size of <h1> to 50px */
+    font-style: italic;  /* Makes the <h1> text italic */
+}
+
+.content1hero, .content2hero p, .content3hero p, .content4hero p {
+    font-size: 20px;  /* Sets the font size of paragraphs inside hero sections to 20px */
+    font-style: italic;  /* Makes the text inside the hero paragraphs italic */
+}
+
+.content1hero, .content2hero, .content3hero, .content4hero {
+    color: white;  /* Sets the text color to white */
+    text-align: center;  /* Centers the text */
+    padding: 125px 20px;  /* Adds padding inside the hero sections */
+}
+
+/* Hero section background images */
+.content1hero{
+    background: url('../../Images/Content_Page_1/Content_1_Hero.jpg') no-repeat center center/cover;  /* Sets the background image for the first content section, Here, ../../ means "go up two levels" (because we're moving from CSS/Global_CSS/ to the root) */
+}
+
+.content2hero{
+    background: url('../../Images/Content_Page_2/Content_2_Hero.jpg') no-repeat center center/cover;  /* Sets the background image for the second content section, Here, ../../ means "go up two levels" (because we're moving from CSS/Global_CSS/ to the root) */
+}
+
+.content3hero{
+    background: url('../../Images/Content_Page_3/Content_3_Hero.jpg') no-repeat center center/cover;  /* Sets the background image for the third content section, Here, ../../ means "go up two levels" (because we're moving from CSS/Global_CSS/ to the root) */
+}
+
+.content4hero{
+    background: url('../../Images/Content_Page_4/Content_4_Hero.jpg') no-repeat center center/cover;  /* Sets the background image for the fourth content section, Here, ../../ means "go up two levels" (because we're moving from CSS/Global_CSS/ to the root) */
+}
+
+/* Card image styling */
+.card img {
+    width: 150px;  /* Sets the width of card images */
+    height: 100px;  /* Sets the height of card images */
+    border-radius: 5px;  /* Rounds the corners of the card images */
+}
+
+/* Grid image styling */
+.lifebelowwater-grid img, .threat-grid img, .innovation-grid img, .actions-grid img{
+    width: 250px;  /* Sets the width of the grid images */
+    height: 150px;  /* Sets the height of the grid images */
+    border-radius: 5px;  /* Rounds the corners of the grid images */
+}
+
+/* Section styling with background images */
+.lifebelowwater, .funfacts, .threats, .organizations, .innovations, .actions{
+    padding: 20px;  /* Adds padding inside each section */
+    background: url('../Images/Content_Page_3/Card_Background.jpg'); /* Sets background image for these sections */
+    background-size: cover;  /* Ensures the background image covers the whole section */
+    margin: 20px;  /* Adds margin around each section */
+    border-radius: 10px;  /* Rounds the corners of the sections */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Adds a shadow effect around the sections */
+}
+
+.sdg14, .policies, .solutions, .everyday-actions{
+    padding:20px;  /* Adds padding inside these sections */
+    margin: 20px;  /* Adds margin around these sections */
+}
+
+/* Grid container styling */
+.lifebelowwater-grid, .funfacts-grid, .threat-grid, .organizations-grid, .innovation-grid, .actions-grid {
+    display: flex;  /* Uses flexbox layout */
+    justify-content: space-around;  /* Distributes items evenly with space around them */
+    flex-wrap: wrap;  /* Allows items to wrap to the next line if needed */
+}
+
+/* Card styling */
+.card {
+    background: white;  /* Sets a white background for the cards */
+    padding: 15px;  /* Adds padding inside the card */
+    margin: 10px;  /* Adds margin around the card */
+    border-radius: 8px;  /* Rounds the corners of the card */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);  /* Adds a shadow effect to the card */
+    text-align: center;  /* Centers the text inside the card */
+    width: 250px;  /* Sets the width of the card */
+    transition: all 0.3s ease-in-out;  /* Smooth transition for all changes */
+}
+
+/* Card hover effect */
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Stronger shadow on hover */
+    transform: scale(1.05);  /* Slightly enlarges the card on hover */
+}
+
+/* Before and after image section layout */
+.before-after {
+    display: flex;  /* Uses flexbox layout */
+    flex-direction: column;  /* Arranges items vertically */
+    align-items: center;  /* Centers the items */
+    gap: 20px;  /* Adds space between items */
+}
+
+/* Row layout for before and after images */
+.before-after-row {
+    display: flex;  /* Uses flexbox layout */
+    justify-content: center;  /* Centers the items in the row */
+    gap: 20px;  /* Adds space between items */
+}
+
+.before-after-row div {
+    text-align: center;  /* Centers the text inside the div */
+    width: 700px;  /* Sets a fixed width for the div */
+}
+
+/* Image styling for before and after section */
+.before-after img {
+    width: 700px;  /* Sets a fixed width for the image */
+    height: 400px;  /* Sets a fixed height for the image */
+    object-fit: cover;  /* Ensures the image fills the area without distortion */
+    border-radius: 8px;  /* Rounds the corners of the image */
+}
+
+/* List styling */
+.sdg14list, .policieslist, .solutionslist, .actionslist {
+    list-style: none;  /* Removes default list bullets */
+    padding: 0;  /* Removes padding */
+}
+
+.sdg14list li, .policieslist li, .solutionslist li, .actionslist li {
+    margin: 10px 0;  /* Adds margin between list items */
+    padding: 10px;  /* Adds padding inside list items */
+    background: #e0f7fa;  /* Sets a light blue background for list items */
+    border-left: 4px solid #0077b6;  /* Adds a left border to list items */
+    font-family: Arial, Helvetica, sans-serif;  /* Sets the font family */
+    font-size: 1rem;  /* Sets the font size */
+}
+
+/* Call-to-action section styling */
+.call-to-action {
+    text-align: center;  /* Centers the text */
+    background: #c5e3ff;  /* Sets a light blue background */
+    color: rgb(0, 0, 0);  /* Sets the text color to black */
+    padding: 20px;  /* Adds padding inside the section */
+}
+
+/* Icon styling */
+.icon {
+    width: 30px;  /* Sets the width of icons */
+    height: 30px;  /* Sets the height of icons */
+    margin-right: 10px;  /* Adds margin to the right of icons */
+}
+
+/* Real-life case study text styling */
+.real-life-case-study {
+    font-style: italic;  /* Makes the text italic */
+    margin-top: 10px;  /* Adds margin above the text */
+}
+
+/* Hide the checkbox for sidebar toggle */
+#sidebar-toggle {
+    display: none;  /* Hides the checkbox */
+}
+
+/* Sidebar container styling */
+.sidebar {
+    position: fixed;  /* Fixes the sidebar to the left side of the screen */
+    top: 0;  /* Aligns the sidebar to the top of the page */
+    left: -250px;  /* Initially hides the sidebar off-screen */
+    width: 250px;  /* Sets the width of the sidebar */
+    height: 100%;  /* Makes the sidebar full height */
+    background-color: #333;  /* Sets a dark background color for the sidebar */
+    transition: left 0.3s;  /* Smooth transition for the sidebar movement */
+    padding-top: 60px;  /* Adds padding at the top of the sidebar */
+}
+
+/* Sidebar link styling */
+.sidebar a {
+    display: block;  /* Makes the links block elements */
+    padding: 10px 15px;  /* Adds padding inside the links */
+    color: white;  /* Sets the text color to white */
+    text-decoration: none;  /* Removes underline from links */
+    font-size: 18px;  /* Sets the font size */
+}
+
+/* Sidebar link hover effect */
+.sidebar a:hover {
+    background-color: #575757;  /* Changes background color on hover */
+}
+
+/* Sidebar toggle button styling */
+.toggle-btn {
+    display: inline-block;  /* Makes the button inline-block */
+    font-size: 20px;  /* Sets the font size */
+    background-color: #0066cc;  /* Sets a blue background for the button */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);  /* Adds a shadow effect to the button */
+    color: white;  /* Sets the text color to white */
+    padding: 10px;  /* Adds padding inside the button */
+    border: none;  /* Removes the border of the button */
+    cursor: pointer;  /* Changes cursor to a pointer */
+    margin-top: 10px;  /* Adds margin above the button */
+    margin-left: 10px;  /* Adds margin to the left of the button */
+    position: absolute;   /* Positions the button absolutely */
+}
+
+/* Sidebar close button styling */
+.close-btn {
+    display: block;  /* Makes the close button block element */
+    font-size: 30px;  /* Sets the font size of the close button */
+    color: white;  /* Sets the text color to white */
+    cursor: pointer;  /* Changes cursor to a pointer */
+    padding: 10px 15px;  /* Adds padding inside the button */
+}
+
+/* Sidebar close button hover effect */
+.close-btn:hover {
+    background-color: #575757;  /* Changes background color on hover */
+}
+
+/* When the checkbox is checked, show the sidebar */
+#sidebar-toggle:checked ~ .sidebar {
+    left: 0;  /* Moves the sidebar to the left, making it visible */
+}
+
+/* Responsive Styles */
+
+/* Styles for screens smaller than 768px (tablets and small devices) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px; /* Reduce font size for better readability on smaller screens */
+    }
+    .content1hero, .content2hero, .content3hero, .content4hero {
+        padding: 60px 10px; /* Reduce padding to prevent excessive spacing */
+    }
+    .lifebelowwater-grid, .funfacts-grid, .threat-grid, .organizations-grid, .innovation-grid, .actions-grid {
+        flex-direction: column; /* Stack grid items vertically */
+        align-items: center; /* Center align items for better layout */
+    }
+    .card {
+        width: 100%; /* Make cards take full width */
+        max-width: 300px; /* Limit max width to maintain structure */
+    }
+    .before-after-row {
+        flex-direction: column; /* Stack before and after images vertically */
+    }
+}
+
+/* Styles for screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px; /* Further reduce font size for mobile screens */
+    }
+    .content1hero, .content2hero, .content3hero, .content4hero {
+        padding: 40px 5px; /* Further reduce padding for compact spacing */
+    }
+    .sidebar {
+        width: 200px; /* Adjust sidebar width for smaller screens */
+    }
+    .toggle-btn {
+        font-size: 18px; /* Reduce button font size for better fit */
+        padding: 8px; /* Adjust padding for a compact look */
+    }
+}

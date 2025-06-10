@@ -1,0 +1,132 @@
+.homepage {
+    height: 100vh;  /* Full viewport height */
+    width: 100vw;   /* Full viewport width */
+    background-image: url('../Images/Hero/Herovideo1.gif'); /* GIF as Background Image (Hero) */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-attachment: scroll; /* 'background-attachment: fixed' creates a parallax effect, while 'scroll' makes the background move with the content */
+    display: flex; /* Uses flexbox for layout */
+    align-items:center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    text-align: center; /* Aligns text to the center */
+    color: white; /* Sets the text color to white */
+    padding-top: 60px; /* Avoids overlapping with navbar */
+    height: calc(100vh - 60px); /* Full height minus navbar */
+    align-items: flex-start; /* Aligns items at the top */
+}
+
+.homepage h1 {
+    font-size: 8rem; /* Large font size for the header */
+    margin: 0; /* Removes any default margin */
+    font-family:'Baloo 2', sans-serif; /* Specifies a playful font */
+    font-style: italic; /* Makes the text italic */
+    padding-right: 20px; /* Adds padding to the right */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to the text for depth */
+}
+
+.homepage p {
+    font-size: 1.5rem; /* Sets the font size */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Specifies a clean, readable font */
+    font-style: italic; /* Italicizes the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to the text for better visibility */
+}
+
+.contentbox img {
+    width: 300px; /* Sets the image width */
+    height: 200px; /* Sets the image height */
+    border-radius: 15px; /* Rounds the image corners */
+}
+
+.contentbox {
+    border: 2px solid transparent; /* Border with transparent color */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3); /* Adds a subtle shadow around the box */
+    height: 475px; /* Sets the height of the content box */
+    width: 325px; /* Sets the width of the content box */
+    margin: 25px; /* Adds spacing around the box */
+    text-align: center; /* Centers the text inside the box */
+    background-color: #fff; /* Sets the background color to white */
+    border-radius: 15px; /* Rounds the corners of the box */
+    padding-top: 12px; /* Adds padding to the top of the box */
+    transition: all 0.3s ease-in-out; /* Adds a smooth transition for any changes */
+}
+
+.contentbox:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth on hover */
+    transform: scale(1.05); /* Slightly enlarges the card to create a "coming forward" effect on hover */
+}
+
+.contentbox p {
+    color: #777777; /* Sets the paragraph text color */
+    font-size: 15px; /* Sets the font size */
+    padding-bottom: 5px; /* Adds padding to the bottom */
+    margin-bottom: 30px; /* Adds margin to the bottom */
+    padding: 5px; /* Adds padding to the paragraph */
+}
+
+.contents {
+    display: flex; /* Uses flexbox for layout */
+    padding-top: 10px; /* Adds padding to the top */
+}
+
+.calltoaction {
+    padding-top: 10px; /* Adds padding to the top */
+    padding-bottom: 20px; /* Adds padding to the bottom */
+    color: #000000; /* Sets the text color to black */
+    text-align: center; /* Centers the text */
+    background: #c5e3ff; /* Sets a light blue background color */
+}
+
+.ourmission {
+    margin: 50px; /* Adds margin around the element */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .homepage h1 {
+        font-size: 4rem; /* Reduces font size for smaller screens */
+    }
+
+    .homepage p {
+        font-size: 1.2rem; /* Adjusts paragraph font size */
+    }
+
+    .contentbox {
+        width: 100%; /* Makes content boxes full width */
+        height: auto; /* Adjusts the height to content */
+        margin: 10px; /* Reduces margin */
+    }
+
+    .contents {
+        flex-direction: column; /* Stacks the content vertically */
+        padding-top: 20px; /* Adds padding for spacing */
+    }
+
+    .contentbox img {
+        max-width: 100%; /* Makes images take up the full container width */
+    }
+
+    .calltoaction {
+        padding-top: 20px; /* Adds more padding on smaller screens */
+        padding-bottom: 30px; /* Adds more padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .homepage h1 {
+        font-size: 3rem; /* Further reduces font size */
+    }
+
+    .homepage p {
+        font-size: 1rem; /* Adjusts paragraph font size */
+    }
+
+    .contentbox {
+        width: 90%; /* Makes content boxes almost full width */
+        margin: 5px; /* Reduces margin further */
+    }
+}
+
+
+
+

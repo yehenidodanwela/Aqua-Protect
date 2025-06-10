@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Thoughts</title>
+    <link rel="stylesheet" href="CSS/Feedback.css">
+    <link rel="stylesheet" href="CSS/Global_CSS/Common.css">
+    <script defer src="JS/Feedback.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="SplashScreen.html" class="logo-link">
+            <img src="Images/Logo/Logo_dark_theme.png" alt="Logo">
+            </a>
+        </div>
+        <div class="spacer"></div>
+        <ul class="nav-links">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Sitemap.html">Site Map</a></li>
+            <li><a href="Table.html">Our Network</a></li>
+            <li><a href="Volunteer.html">Join Us</a></li>
+            <li><a href="Feedback.html" class="active">Share Your Thoughts</a></li>
+            <li><a href="Ourteam.html">Our Crew</a></li>
+            <li><a href="Profile.html">My Profile</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h2>Send Us Your Feedback</h2>
+    </header>
+
+    <main>
+        <form id="feedbackForm">
+            <fieldset>
+                <legend>Personal Details</legend>
+                
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required title="Please enter a valid email">
+
+                <label for="phone">Telephone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required title="Enter a 10-digit phone number">
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="2" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback Details</legend>
+
+                <label for="comment">Comment or Message:</label>
+                <textarea id="comment" name="comment" rows="4" maxlength="200" oninput="updateCounter()"></textarea>
+                <p id="charCount">200 characters remaining</p>
+
+                <label for="topic">Topic of Feedback:</label>
+                <select id="topic" name="topic">
+                    <option value="pollution">Marine Pollution</option>
+                    <option value="conservation">Ocean Conservation</option>
+                    <option value="climate">Climate Change Effects</option>
+                </select>
+
+                <label for="marineAnimals">Select Marine Animals You Love (Hold Ctrl to select multiple):</label>
+                <select id="marineAnimals" name="marineAnimals" multiple>
+                    <option value="dolphin">Dolphins</option>
+                    <option value="whale">Whales</option>
+                    <option value="turtle">Sea Turtles</option>
+                    <option value="shark">Sharks</option>
+                </select>
+
+                <label>Would You Like To Receive Updates?</label>
+                <input type="radio" name="updates" value="yes"> Yes
+                <input type="radio" name="updates" value="no"> No
+
+                <label>How Did You Hear About Us?</label>
+                <input type="radio" name="source" value="social"> Social Media
+                <input type="radio" name="source" value="website"> Website
+                <input type="radio" name="source" value="friend"> Friend
+
+                <label for="datetime">Select Date & Time:</label>
+                <input type="datetime-local" id="datetime" name="datetime">
+
+                <label for="file">Upload an Image (optional):</label>
+                <input type="file" id="file" name="file">
+            </fieldset>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footercontainer">
+            <div class="footercontent">
+                <div class="social">
+                    <a href="SplashScreen.html" class="logo-link">
+                        <img src="Images/Logo/Logo_dark_theme.png" alt="Logo" class="footerlogo">
+                    </a>
+                    <p>Follow Us On </p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><img src="Images/Footer_Icons/Facebook.webp" alt="Facebook"></a>
+                        <a href="https://instagram.com" target="_blank"><img src="Images/Footer_Icons/Instagram.webp" alt="Instagram"></a>
+                        <a href="https://youtube.com" target="_blank"><img src="Images/Footer_Icons/Youtube.png" alt="YouTube"></a>
+                        <a href="https://linkedin.com" target="_blank"><img src="Images/Footer_Icons/Linkedin.AVIF" alt="LinkedIn"></a>
+                    </div>
+                </div>
+
+                <div class="websitelinks">
+                    <h4>Website Links</h4>
+                    <ul>
+                        <li><a href="Homepage.html">Home</a></li>
+                        <li><a href="Sitemap.html">Sitemap</a></li>
+                        <li><a href="Table.html">Our Network</a></li>
+                        <li><a href="Volunteer.html">Join Us</a></li>
+                        <li><a href="Feedback.html">Share Your Thoughts</a></li>
+                        <li><a href="Ourteam.html">Our Crew</a></li>
+                        <li><a href="Profile.html">My Profile</a></li>
+                    </ul>
+                </div>
+
+                <div class="usefullinks">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a></li>
+                        <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
+                        <li><a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a></li>
+                        <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
+                    </ul>
+                </div>
+
+                <div class="contentpages">
+                    <h4>Content Pages</h4>
+                    <ul>
+                    <li><a href="Content_ST4.html">Content 01</a></li>
+                    <li><a href="Content_ST1.html">Content 02</a></li>
+                    <li><a href="Content_ST2.html">Content 03</a></li>
+                    <li><a href="Content_ST3.html">Content 04</a></li>
+                    </ul>
+                </div>
+
+                <div class="our-team">
+                    <h4>Student Pages</h4>
+                    <ul>
+                    <li><a href="pageEditor_ST1.html">Student 01</a></li>
+                    <li><a href="pageEditor_ST2.html">Student 02</a></li>
+                    <li><a href="pageEditor_ST3.html">Student 03</a></li>
+                    <li><a href="pageEditor_ST4.html">Student 04</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <hr>
+                <p>&copy; 2025 Aquaprotect. All Rights Reserved.</p>
+                <p class="developer"><i>Page Designed and Developed by <a href="pageEditor_ST3.html">Bihandu Perera</a></i></p>
+            </div>
+        </div>  
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+        <script>
+            // Function to scroll back to top
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+
+</body>
+</html>

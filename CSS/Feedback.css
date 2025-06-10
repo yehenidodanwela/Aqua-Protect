@@ -1,0 +1,78 @@
+/* Apply box-sizing to all elements to include padding and border in the element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Set the font family */
+    text-align: center; /* Center align the text */
+}
+
+/* Main container with some bottom margin */
+main {
+    margin-bottom: 50px;
+}
+
+/* Style for the form element */
+form {
+    background: white; /* Set white background */
+    padding: 20px; /* Add padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3); /* Add shadow for a subtle depth effect */
+    max-width: 600px; /* Set max width of the form */
+    margin: auto; /* Center align the form */
+}
+
+/* Style for the fieldset element */
+fieldset {
+    border: 1px solid #213456; /* Border color for fieldset */
+    margin-bottom: 10px; /* Add space between fieldsets */
+    padding: 10px; /* Padding inside the fieldset */
+}
+
+/* Style for the legend element inside fieldset */
+legend {
+    font-weight: bold; /* Make the legend text bold */
+    color: #4174b3; /* Set text color */
+}
+
+/* Style for the label element */
+label {
+    display: block; /* Ensure label is displayed as a block element */
+    margin: 8px 0; /* Add space above and below the label */
+}
+
+/* Style for input, select, and textarea elements */
+input, select, textarea {
+    width: 100%; /* Make elements fill the width of the form */
+    padding: 8px; /* Add padding inside the elements */
+    margin-top: 5px; /* Space above the elements */
+    border: 1px solid #4174b3; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Style for button element */
+button {
+    display: inline-block; /* Make the button inline */
+    margin-bottom: 10px; /* Space below the button */
+    padding: 10px 20px; /* Add padding inside the button */
+    background-color: #0066cc; /* Set button background color */
+    color: white; /* Set text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-decoration: none; /* Remove underline from text */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out; /* Add transition effects */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0055aa; /* Darkens the background on hover */
+}
+
+/* Button active (when clicked) effect */
+button:active {
+    transform: scale(0.95); /* Slight press effect when clicked */
+}
+

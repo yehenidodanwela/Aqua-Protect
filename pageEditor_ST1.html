@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student 1 - Yashendri Senavirathna</title>
+    <link rel="stylesheet" href="CSS/Global_CSS/Common.css"> <!-- Global CSS link -->
+    <link rel="stylesheet" href="CSS/pageEditor_validator.css"> <!-- External CSS link -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="SplashScreen.html" class="logo-link">
+            <img src="Images/Logo/Logo_dark_theme.png" alt="Logo">
+            </a>
+        </div>
+        <div class="spacer"></div>
+        <ul class="nav-links">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Sitemap.html">Site Map</a></li>
+            <li><a href="Table.html">Our Network</a></li>
+            <li><a href="Volunteer.html">Join Us</a></li>
+            <li><a href="Feedback.html">Share Your Thoughts</a></li>
+            <li><a href="Ourteam.html">Our Crew</a></li>
+            <li><a href="Profile.html">My Profile</a></li>
+        </ul>
+    </nav>
+
+    <section class="stud">
+        <h2>Page Editor Page (Yashendri Senavirathna - Student 1)</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="splash">Splash Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Splash Page uses a meta tag to automatically redirect users to the homepage after a delay of four seconds. The page structure is managed using a splash-container class that keeps the content centered on the screen. A loader-container wraps the visual loading spinner, while the loader class handles the animated spinner effect through CSS. The animation is created using CSS keyframes to rotate the loader 360 degrees continuously. The body of the page uses a flex layout with centered alignment and a height of 100vh to fill the entire screen. Additional styling includes background settings such as no-repeat and cover to ensure the splash screen appears clean and full-screen. The splash screen container uses border-radius for rounded edges and flexbox for vertical alignment of its elements. The button on the splash screen is styled with padding, font adjustments, and transitions for hover and click effects. When hovered, the background turns blue, and when clicked, the button shrinks slightly, offering a responsive feel.</p> 
+                    
+                    <h3>Accessibility</h3>
+                        <p>The Splash Page is designed with accessibility in mind by using high-contrast colors and large font sizes for improved readability. Buttons are focusable and include hover and active states to support users navigating with keyboards. The HTML structure supports screen readers with descriptive content and semantic layout. The spinner animation rotates slowly to reduce motion sensitivity, and the layout is responsive across different screen sizes. In addition to the auto-redirect, a manual button is provided to give users more control and navigation flexibility.</p>
+                    
+                    <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST1.html#splashVal">Student 1 Validation Page(Splash Page)</a>
+
+                    <h3>Link to the page</h3>
+                        <p><a href="SplashScreen.html">Splash Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Table Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Volunteer Page starts with a navigation bar created using a navigation tag. Inside it, the site logo is wrapped in an anchor link pointing to the homepage. A spacer class is used to separate the logo from the menu items, which are listed inside an unordered list. A filter section follows, using a label and select dropdown for users to sort volunteer activities. The activities themselves are displayed inside an activities-container, with each one enclosed in an activity-box. Buttons inside these boxes allow users to view projects or apply directly. The review section includes a review-summary class to display an overall rating, a heading to show the review score, and a paragraph with a see more link. Finally, a feedback form at the bottom of the page includes a textarea for users to share their thoughts. CSS is used throughout to structure the layout, using flex display, flex-wrap for responsiveness, and gap to space the boxes. The review section uses a light background and rounded corners to stand out. Buttons are styled with pointer cursors and slight border radius for accessibility and interaction feedback.</p> 
+
+                    <h3>Accessibility</h3>
+                        <p>The Volunteer Page uses semantic HTML to structure content clearly, which benefits screen readers and assistive technologies. All images are given descriptive alt attributes, and form elements like the filter dropdown are associated with labels. The layout allows full keyboard navigation, with all buttons and links accessible via the Tab key. The design ensures high color contrast between text and background, and all text is scalable using relative units. Skip links are implemented to help users quickly jump to key sections, improving navigation for users with mobility or visual impairments.</p>
+
+                    <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST1.html#volunteerVal">Student 1 Validation Page(Volunteer)</a>
+    
+                    <h3>Link to the page</h3>
+                        <p><a href="Volunteer.html">Volunteer</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>Content Page 2 begins with a header that includes metadata, links to external stylesheets, and a Google font. The sidebar menu is toggled using a hidden checkbox input. When activated, the sidebar slides into view and provides navigation links to sections within the page. Each piece of content is displayed inside a card element, arranged in a threat-grid container. These cards present different environmental threats, along with related actions and images. The page uses buttons to encourage user engagement, such as applying or learning more. Background images are applied to hero sections using CSS properties like no-repeat, center, and cover. The sidebar uses CSS transitions for smooth sliding, while the main content is styled using flex and grid layouts to ensure responsiveness. Cards include hover effects and shadows for interactivity. A floating back-to-top button sits in the bottom-right corner of the screen, making it easy for users to navigate back to the top.</p> 
+
+                    <h3>Accessibility</h3>
+                        <p>Content Page 2 ensures that all images include descriptive alt attributes, making them accessible to screen readers. Text is displayed with adequate contrast against background images to support users with visual impairments. Fonts are sized using scalable units like rem and percentages, allowing users to zoom or resize text as needed. Hyperlinks use clear and descriptive text to guide users, avoiding vague phrases like “click here.” The layout is responsive and adapts to mobile devices through flexible grids and media queries, ensuring accessibility across all screen sizes and input types.</p>
+
+                    <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST1.html#contentVal">Student 1 Validation Page(Content Page)</a>
+   
+                    <h3>Link to the page</h3>
+                        <p><a href="Content_ST1.html">Content 2</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>One of the main challenges faced was organizing a large amount of content in a way that is easy to navigate. This was solved by introducing a sticky sidebar and anchor links, allowing users to jump to specific sections. Cards and grids were used to break content into smaller, more digestible pieces. Maintaining consistent design across multiple pages was also challenging, especially when different styles were applied. A common CSS file was introduced to unify the design. Another issue was ensuring images were responsive across screen sizes, which was solved by using flexbox and setting maximum width properties. Key lessons learned include the importance of accessibility, such as using aria labels and alt attributes, and optimizing performance through image compression and lazy loading. Ensuring responsive design and consistent code structure helped improve the user experience. These improvements resulted in a more user-friendly, accessible, and efficient website.</p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>The Splash, Volunteer, and Content Page 2 all meet Janet compliance guidelines. Accessibility is ensured through the use of semantic HTML, proper contrast, keyboard navigability, and screen reader compatibility. Data protection is achieved by obtaining user consent before collecting any personal information and securely storing only necessary data. The site follows security standards by implementing HTTPS, input validation, CAPTCHA, and content security policies to prevent threats like cross-site scripting. Performance is optimized by compressing assets, minifying code, and designing for mobile responsiveness. Together, these measures ensure that the site is safe, fast, accessible, and legally compliant.</p>        
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                        <li>W3C (2024) <i>Web Accessibility Initiative (WAI)</i> Available at: <a href="https://www.w3.org/WAI/">https://www.w3.org/WAI/</a></li>
+                        <li>Global Goals (2025) <i>Terms & Privacy Policies</i> Available at: <a href="https://www.globalgoals.org/">https://www.globalgoals.org/</a></li>
+                        <li>Google Fonts (2025) <i>Baloo 2 Typeface</i> Available at: <a href="https://fonts.google.com/">https://fonts.google.com/</a></li>
+                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+                    </ul>
+            </section>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splash">Splash Page</a></li>
+                        <li><a href="#volunteer">Volunteer Page</a></li>
+                        <li><a href="#content">Content page 2</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footercontainer">
+            <div class="footercontent">
+                <div class="social">
+                    <a href="SplashScreen.html" class="logo-link">
+                        <img src="Images/Logo/Logo_dark_theme.png" alt="Logo" class="footerlogo">
+                    </a>
+                    <p>Follow Us On </p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><img src="Images/Footer_Icons/Facebook.webp" alt="Facebook"></a>
+                        <a href="https://instagram.com" target="_blank"><img src="Images/Footer_Icons/Instagram.webp" alt="Instagram"></a>
+                        <a href="https://youtube.com" target="_blank"><img src="Images/Footer_Icons/Youtube.png" alt="YouTube"></a>
+                        <a href="https://linkedin.com" target="_blank"><img src="Images/Footer_Icons/Linkedin.AVIF" alt="LinkedIn"></a>
+                    </div>
+                </div>
+
+                <div class="websitelinks">
+                    <h4>Website Links</h4>
+                    <ul>
+                        <li><a href="Homepage.html">Home</a></li>
+                        <li><a href="Sitemap.html">Sitemap</a></li>
+                        <li><a href="Table.html">Our Network</a></li>
+                        <li><a href="Volunteer.html">Join Us</a></li>
+                        <li><a href="Feedback.html">Share Your Thoughts</a></li>
+                        <li><a href="Ourteam.html">Our Crew</a></li>
+                        <li><a href="Profile.html">My Profile</a></li>
+                    </ul>
+                </div>
+
+                <div class="usefullinks">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a></li>
+                        <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
+                        <li><a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a></li>
+                        <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
+                    </ul>
+                </div>
+
+                <div class="contentpages">
+                    <h4>Content Pages</h4>
+                    <ul>
+                    <li><a href="Content_ST4.html">Content 01</a></li>
+                    <li><a href="Content_ST1.html">Content 02</a></li>
+                    <li><a href="Content_ST2.html">Content 03</a></li>
+                    <li><a href="Content_ST3.html">Content 04</a></li>
+                    </ul>
+                </div>
+
+                <div class="our-team">
+                    <h4>Student Pages</h4>
+                    <ul>
+                    <li><a href="pageEditor_ST1.html">Student 01</a></li>
+                    <li><a href="pageEditor_ST2.html">Student 02</a></li>
+                    <li><a href="pageEditor_ST3.html">Student 03</a></li>
+                    <li><a href="pageEditor_ST4.html">Student 04</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <hr>
+                <p>&copy; 2025 Aquaprotect. All Rights Reserved.</p>
+                <p class="developer"><i>Page Designed and Developed by <a href="pageEditor_ST1.html">Yashendri Senavirathna</a></i></p>
+            </div>
+        </div>  
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Function to scroll back to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

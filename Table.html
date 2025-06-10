@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta information for character encoding and viewport settings -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Network</title>
+        <!-- Linking external CSS files for styling -->
+        <link rel="stylesheet" href="CSS/Table.css">
+        <link rel="stylesheet" href="CSS/Global_CSS/Common.css">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet"> <!-- Importing Google Font -->
+    </head>
+
+    <body>
+        <!-- Navigation bar section -->
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="logo">
+                <a href="SplashScreen.html" class="logo-link">
+                <!-- Website logo with alt text for accessibility -->
+                <img src="Images/Logo/Logo_dark_theme.png" alt="Logo" aria-label="Our Website Logo"> <!-- aria-labels provide descriptive labels for screen readers to convey the purpose of an element to users with visual impairments -->
+                </a>
+            </div>
+            <div class="spacer"></div>
+
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li><a href="Homepage.html" aria-label="Go to Homepage">Home</a></li>
+                <li><a href="Sitemap.html" aria-label="View Site Map">Site Map</a></li>
+                <li><a href="Table.html" aria-label="Go to Our Network page" class="active">Our Network</a></li>
+                <li><a href="Volunteer.html" aria-label="Join Us">Join Us</a></li>
+                <li><a href="Feedback.html" aria-label="Share Your Thoughts">Share Your Thoughts</a></li>
+                <li><a href="ourteam.html" aria-label="Our Crew">Our Crew</a></li>
+                <li><a href="Profile.html" aria-label="My Profile">My Profile</a></li>
+            </ul>
+        </nav>
+        
+    <main>
+        <div class="table-container">
+            <table>
+                <!-- Table header with a logo and title -->
+                <tr class="table-headings">
+                    <th><a href="Homepage.html" class="logo-link"><img src="Images/Logo/Logo_dark_theme.png" alt="Logo" class="ourwebsitelogo"></a></th>
+                    <th colspan="6"><h2>Conservation Organizations We Support</h2></th>
+                </tr>
+                <!-- Table column headers with icons and tooltips -->
+                <tr class="table-subheadings">
+                    <th role="columnheader" aria-label="Type of Conservation Organization">
+                        <div class="icon-container">
+                            <img src="Images/Table/Type_Icon.png" alt="Type" class="icon">
+                            <span class="tooltip">Type of Conservation Organization</span>
+                        </div>
+                        <br>Type
+                    </th>
+                    <th role="columnheader" aria-label="Names of Supported Organizations">
+                        <div class="icon-container">
+                            <img src="Images/Table/Organizations_Icon.jpg" alt="Organizations" class="icon">
+                            <span class="tooltip">Names of Supported Organizations</span>
+                        </div>
+                        <br>Organization
+                    </th>
+                    <th role="columnheader" aria-label="Key Conservation Focus Area">
+                        <div class="icon-container">
+                            <img src="Images/Table/Focus_Area_Icon.jpg" alt="Focus Area" class="icon">
+                            <span class="tooltip">Key Conservation Focus Area</span>
+                        </div>
+                        <br>Focus Area
+                    </th>
+                    <th role="columnheader" aria-label="Country or Region of Operation">
+                        <div class="icon-container">
+                            <img src="Images/Table/Location_Icon.jpg" alt="Location" class="icon">
+                            <span class="tooltip">Country or Region of Operation</span>
+                        </div>
+                        <br>Location
+                    </th>
+                    <th role="columnheader" aria-label="Current Conservation Initiatives">
+                        <div class="icon-container">
+                            <img src="Images/Table/Ongoing_Programs_Icon.jpg" alt="Ongoing Programs" class="icon">
+                            <span class="tooltip">Current Conservation Initiatives</span>
+                        </div>
+                        <br>Ongoing Programs
+                    </th>
+                    <th role="columnheader" aria-label="Official Website for More Details">
+                        <div class="icon-container">
+                            <img src="Images/Table/Website_Icon.jpg" alt="Website" class="icon">
+                            <span class="tooltip">Official Website for More Details</span>
+                        </div>
+                        <br>Website
+                    </th>
+                    <th role="columnheader" aria-label="Verified Status of Organization">
+                        <div class="icon-container">
+                            <img src="Images/Table/Verified_Icon.webp" alt="Verified" class="icon">
+                            <span class="tooltip">Verified Status of Organization</span>
+                        </div>
+                        <br>Verified
+                    </th>
+                </tr>
+                <!-- Table data rows for different conservation organizations -->
+                <tr>
+                    <td rowspan="3" style="background-color: #ffffff;" aria-label="Marine Reserves & Conservation (Protecting marine ecosystems & reserves)">Marine Reserves & Conservation (Protecting marine ecosystems & reserves)</td>
+                    <td>Blue Marine Foundation</td>
+                    <td>Marine Reserves </td>
+                    <td>UK</td>
+                    <td>Project Med</td>
+                    <td><a href="https://www.bluemarinefoundation.com/" aria-label="Visit Blue Marine Foundation Website">Visit Site</a></td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>Marine Conservation Institute</td>
+                    <td>Ocean Policy</td>
+                    <td>USA</td>
+                    <td>Global Ocean Refuge</td>
+                    <td><a href="https://marine-conservation.org/" aria-label="Visit Marine Conservation Institute">Visit Site</a></td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>NOAA Marine Sanctuaries</td>
+                    <td>National Marine Parks</td>
+                    <td>USA</td>
+                    <td>Marine Protected Areas</td>
+                    <td><a href="https://sanctuaries.noaa.gov/" aria-label="Visit NOAA Marine Sanctuaries">Visit Site</a></td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="background-color: #f2f2f2;" aria-label="Wildlife & Species Protection (Safeguarding marine animals & biodiversity)">Wildlife & Species Protection (Safeguarding marine animals & biodiversity)</td>
+                    <td>World Wildlife Fund (WWF)</td>
+                    <td>Endangered Species</td>
+                    <td>Global</td>
+                    <td>Sea Turtles & Whale Protection</td>
+                    <td><a href="https://www.worldwildlife.org/" aria-label="Visit World Wildlife Fund (WWF)">Visit Site</a></td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>National Marine Mammal Foundation</td>
+                    <td>Marine Mammals</td>
+                    <td>USA</td>
+                    <td>Dolphin & Seal Research</td>
+                    <td><a href="https://nmmf.org/" aria-label="Visit National Marine Mammal Foundation">Visit Site</a></td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="background-color: #ffffff;" aria-label="Ocean Cleanup & Advocacy (Reducing pollution & promoting awareness)">Ocean Cleanup & Advocacy (Reducing pollution & promoting awareness)</td>
+                    <td>Ocean Conservancy</td>
+                    <td>Plastic Pollution</td>
+                    <td>Global	</td>
+                    <td>International Coastal Cleanup</td>
+                    <td><a href="https://oceanconservancy.org/" aria-label="Visit Ocean Conservancy">Visit Site</a></td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>The Ocean Foundation</td>
+                    <td>Climate & Ocean Research</td>
+                    <td>USA</td>
+                    <td>Blue Resilience Initiatives</td>
+                    <td><a href="https://oceanfdn.org/" aria-label="Visit The Ocean Foundation">Visit Site</a></td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>Oceanic Preservation Society</td>
+                    <td>Documentary & Awareness</td>
+                    <td>Global</td>
+                    <td>The Cove & Racing Extinction</td>
+                    <td><a href="https://opsociety.org/" aria-label="Visit Oceanic Preservation Society">Visit Site</a></td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="background-color: #f2f2f2;" aria-label="General Marine Education & Research (Informing and empowering communities)">General Marine Education & Research (Informing and empowering communities)</td>
+                    <td>MarineBio Conservation Society</td>
+                    <td>Marine Education</td>
+                    <td>Global</td>
+                    <td>Marine Science Programs</td>
+                    <td><a href="https://www.marinebio.org/" aria-label="Visit MarineBio Conservation Society">Visit Site</a></td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>Oceana</td>
+                    <td>Sustainable Fishing</td>
+                    <td>Global</td>
+                    <td>Protecting Oceans Campaign</td>
+                    <td><a href="https://oceana.org/" aria-label="Visit Oceana">Visit Site</a></td>
+                    <td>✅</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <!-- Footer section with social media links and additional navigation -->
+    <footer>
+        <div class="footercontainer">
+            <div class="footercontent">
+                <div class="social">
+                    <a href="SplashScreen.html" class="logo-link">
+                        <img src="Images/Logo/Logo_dark_theme.png" alt="Logo" class="footerlogo">
+                    </a>
+                    <p>Follow Us On </p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><img src="Images/Footer_Icons/Facebook.webp" alt="Facebook"></a>
+                        <a href="https://instagram.com" target="_blank"><img src="Images/Footer_Icons/Instagram.webp" alt="Instagram"></a>
+                        <a href="https://youtube.com" target="_blank"><img src="Images/Footer_Icons/Youtube.png" alt="YouTube"></a>
+                        <a href="https://linkedin.com" target="_blank"><img src="Images/Footer_Icons/Linkedin.AVIF" alt="LinkedIn"></a>
+                    </div>
+                </div>
+
+                <div class="websitelinks">
+                    <h4>Website Links</h4>
+                    <ul>
+                        <li><a href="Homepage.html">Home</a></li>
+                        <li><a href="Sitemap.html">Sitemap</a></li>
+                        <li><a href="Table.html">Our Network</a></li>
+                        <li><a href="Volunteer.html">Join Us</a></li>
+                        <li><a href="Feedback.html">Share Your Thoughts</a></li>
+                        <li><a href="ourteam.html">Our Crew</a></li>
+                        <li><a href="Profile.html">My Profile</a></li>
+                    </ul>
+                </div>
+
+                <div class="usefullinks">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a></li>
+                        <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
+                        <li><a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a></li>
+                        <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
+                    </ul>
+                </div>
+
+                <div class="contentpages">
+                    <h4>Content Pages</h4>
+                    <ul>
+                    <li><a href="Content_ST4.html">Content 01</a></li>
+                    <li><a href="Content_ST1.html">Content 02</a></li>
+                    <li><a href="Content_ST2.html">Content 03</a></li>
+                    <li><a href="Content_ST3.html">Content 04</a></li>
+                    </ul>
+                </div>
+
+                <div class="our-team">
+                    <h4>Student Pages</h4>
+                    <ul>
+                    <li><a href="pageEditor_ST1.html">Student 01</a></li>
+                    <li><a href="pageEditor_ST2.html">Student 02</a></li>
+                    <li><a href="pageEditor_ST3.html">Student 03</a></li>
+                    <li><a href="pageEditor_ST4.html">Student 04</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <hr>
+                <p>&copy; 2025 Aquaprotect. All Rights Reserved.</p>
+                <p class="developer"><i>Page Designed and Developed by <a href="pageEditor_ST2.html">Yeheni Dodanwela</a></i></p>
+            </div>
+        </div>  
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+        <script>
+            // Function to scroll back to top
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+
+    </body>
+</html>

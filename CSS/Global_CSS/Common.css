@@ -1,0 +1,314 @@
+/* Global CSS styles*/
+
+html {
+    scroll-behavior: smooth; /* Smooth scroll behavior for the entire page */
+}
+
+body {
+    margin: 0; /* Removes default margin */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background-color: rgb(255, 255, 255); /* White background */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between items */
+    height: 80px; /* Set navbar height */
+    padding: 10px 20px; /* Padding inside navbar */
+    background: #213456; /* Dark blue background */
+    box-sizing: border-box; /* Include padding in the element's total width/height */
+}
+
+/* Logo image styling */
+.logo img {
+    height: 100px; /* Logo height */
+    padding-top: 5px; /* Space from the top */
+}
+
+/* Spacer to push other content */
+.spacer {
+    flex-grow: 1; /* Takes available space */
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style: none; /* Remove list bullets */
+    display: flex; /* Flexbox for horizontal links */
+}
+
+/* Individual list items for the navbar */
+.nav-links li {
+    display: inline; /* Make list items inline */
+}
+
+/* Links styling */
+.nav-links a {
+    color: rgb(255, 255, 255); /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Font size */
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+    padding: 20px; /* Padding for spacing */
+    padding-top: 30px; /* Extra top padding */
+    padding-bottom: 30px; /* Extra bottom padding */
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    color: rgb(108, 172, 249); /* Light blue color on hover */
+}
+
+/* Active state for active navigation links */
+.active {
+    background-color: rgba(32, 119, 225, 0.5); /* Light blue background */
+    font-weight: bold; /* Bold font for active link */
+}
+
+/* Header styles */
+header {
+    color: rgb(255, 255, 255); /* White text color */
+}
+
+/* Typography */
+
+/* Heading 1 styling */
+h1 {
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+}
+
+/* Heading 2 styling */
+h2 {
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+    font-size: 1.75rem; /* Font size */
+    text-align: center; /* Center-align text */
+    background: linear-gradient(90deg, #daeeff, #3e8ed9, #0f088e); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+    padding: 20px; /* Padding around the text */
+}
+
+/* Heading 3 styling */
+h3 {
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+}
+
+/* Heading 4 styling */
+h4 {
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+    color: #c5e3ff; /* Light blue color */
+    text-decoration: underline; /* Underline text */
+}
+
+/* Paragraph styling */
+p {
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+    font-size: 1rem; /* Font size */
+    text-align: center; /* Center-align text */
+}
+
+/* Styles for Buttons */
+
+/* Explore button styling */
+.explore-btn {
+    display: inline-block; /* Inline block for button */
+    padding: 12px 25px; /* Padding around the button */
+    font-size: 18px; /* Font size */
+    text-decoration: none; /* No underline */
+    background: rgb(254, 254, 254); /* White background */
+    color: rgb(0, 0, 0); /* Black text */
+    border: 2px solid #11228f; /* Blue border */
+    border-radius: 25px; /* Rounded corners */
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect for explore button */
+.explore-btn:hover {
+    background: #11228f; /* Dark blue background */
+    color: white; /* White text */
+    border: 2px solid white; /* White border */
+}
+
+/* Active state for explore button */
+.explore-btn:active {
+    transform: scale(0.95); /* Slight press effect when clicked */
+}
+
+/* Button styling */
+button , .btn {
+    display: inline-block; /* Inline block for button */
+    margin-bottom: 10px; /* Space from bottom */
+    padding: 10px 20px; /* Padding around the button */
+    background-color: #0066cc; /* Blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor */
+    text-decoration: none; /* No underline */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: #0055aa; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Active state for buttons */
+.btn:active {
+    transform: scale(0.95); /* Slight press effect when clicked */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #0055aa; /* Darker blue on hover */
+}
+
+/* Active state for buttons */
+button:active {
+    transform: scale(0.95); /* Slight press effect when clicked */
+}
+
+/* Back to top button styles */
+.back-to-top {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* 20px from bottom */
+    right: 20px; /* 20px from right */
+    background-color: #0066cc; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    border-radius: 50%; /* Circular button */
+    display: flex; /* Flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-decoration: none; /* No text underline */
+    font-size: 24px; /* Font size for the icon */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for the back to top button */
+.back-to-top:hover {
+    background-color: #0055aa; /* Darker blue on hover */
+}
+
+/* Active state (when clicked) for the back to top button */
+.back-to-top:active {
+    transform: scale(0.95); /* Slight press effect when clicked */
+}
+
+/* Footer styling */
+footer {
+    background: #213456; /* Dark blue background */
+    color: rgb(255, 255, 255); /* White text */
+    padding: 10px; /* Padding inside footer */
+}
+
+/* Paragraph styling inside footer */
+footer p {
+    color: white; /* White text color */
+    font-size: 1rem; /* Font size */
+    text-align: start; /* Left-align text */
+}
+
+/* Footer content layout */
+.footercontent {
+    display: flex; /* Flexbox for layout */
+    text-align: start; /* Left-align text */
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width */
+    justify-content: space-between; /* Space between items */
+    flex: 1; /* Allow items to grow */
+    margin: 10px; /* Margin around the footer */
+}
+
+/* List styling for footer */
+footer ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove padding */
+}
+
+/* List item styling for footer */
+footer ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Anchor link styling inside footer */
+footer a {
+    text-decoration: none; /* Remove underline */
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+    color: #ffffff; /* White text color */
+}
+
+/* Hover effect for footer links */
+footer a:hover {
+    color: rgb(108, 172, 249); /* Light blue on hover */
+}
+
+/* Footer logo styling */
+.footerlogo {
+    height: 200px; /* Logo height */
+    margin: 20px; /* Margin around the logo */
+}
+
+/* Social icons container */
+.social-icons {
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 15px; /* Space between icons */
+    margin-top: 10px; /* Space from top */
+}
+
+/* Individual social icon styling */
+.social-icons a img {
+    width: 30px; /* Icon width */
+    height: 30px; /* Icon height */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space from the bottom */
+}
+
+/* Social media styling */
+.social {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center-align text */
+}
+
+/* Paragraph inside social media section */
+.social p {
+    font-size: 1rem; /* Font size */
+    color: white; /* White text color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Copyright paragraph styling */
+.copyright p {
+    text-align: center; /* Center-align text */
+    font-size: 1rem; /* Font size */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
